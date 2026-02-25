@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import Intro from "./components/Intro"
+import Navbar from './components/Navbar'
+import IntroCard from "./components/IntroCard"
 import Projects from "./components/Projects"
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
 
   return (
     <>
-      <Intro />
+      <Navbar />
+      <IntroCard />
       <Projects />
     </>
   )
