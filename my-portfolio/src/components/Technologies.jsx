@@ -4,7 +4,7 @@ import {
   SiMongodb,
   SiDotnet,
   SiTailwindcss,
-  SiRoblox
+  SiLua
 } from "react-icons/si";
 
 const tech = [
@@ -12,18 +12,18 @@ const tech = [
   { name: "MongoDB", icon: <SiMongodb /> },
   { name: ".NET", icon: <SiDotnet /> },
   { name: "Tailwind", icon: <SiTailwindcss /> },
-  { name: "Roblox", icon: <SiRoblox /> },
+  { name: "Lua", icon: <SiLua /> },
 ];
 
 export default function Technologies() {
   return (
-    <section id="technologies" className="py-24 px-6">
-      <div className="max-w-6xl mx-auto text-center">
-        <Typography variant="h4" className="mb-16">
+    <section id="technologies" className="py-10 px-6">
+      <div className="max-w-2xl mx-auto text-center">
+        <Typography variant="h4" className="mb-16 pb-5">
           Technologies
         </Typography>
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
           {tech.map((t, i) => (
             <div
               key={i}

@@ -5,7 +5,11 @@ export default function ProjectCard({ project }) {
   return (
     <Card className="group transition-all duration-300 rounded-2xl">
         <CardContent
+            elevation={0}
             sx={{
+                backgroundColor: "var(--color-surface-2)",
+                border: "1px solid var(--color-surface-3)",
+                borderRadius: "20px",
                 display: "flex",
                 flexDirection: "column",
                 height: "100%",
