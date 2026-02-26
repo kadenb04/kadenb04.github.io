@@ -13,20 +13,20 @@ export default function Navbar() {
       }}
     >
       <Toolbar className="max-w-6xl mx-auto w-full flex justify-between">
-        <a href="#" className="font-semibold text-lg hover:opacity-80 transition">
+        <a href="#" className="font-semibold text-lg hover:opacity-80 transition hover:text-violet-400">
           Kaden Buchanan
         </a>
 
         <div className="flex gap-4">
-          <Button href="#technologies" color="inherit">Tech</Button>
-          <Button href="#projects" color="inherit">Projects</Button>
-          <Button href="#resume" color="inherit">Resume</Button>
+          <Button href="#projects" color="inherit" className="hover:text-violet-400!">Projects</Button>
+          <Button href="#resume" color="inherit" className="hover:text-violet-400!">Resume</Button>
 
           <IconButton 
             component="a"
             href="https://github.com/kadenb04"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+            className="hover:text-violet-400!">
             <GitHubIcon />
           </IconButton>
 
@@ -34,7 +34,8 @@ export default function Navbar() {
             component="a"
             href="https://linkedin.com/in/kaden-buchanan-225b61230/"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+            className="hover:text-violet-400!">
             <LinkedInIcon />
           </IconButton>
         </div>

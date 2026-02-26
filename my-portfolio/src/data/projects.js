@@ -8,7 +8,10 @@ const projects = [
       "Luau",
       "DataStores",
     ],
-    timeframe: "Jan 2024 – Present"
+    timeframe: "Jan 2024 – Present",
+    image: "/images/pockets.png",
+    github: "https://github.com/yourrepo",
+    demo: "https://www.roblox.com/games/110566630715561/Pockets"
   },
   {
     title: "MERN Banking Application",

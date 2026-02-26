@@ -1,35 +1,64 @@
-import { Card, CardContent, Typography, Avatar } from "@mui/material";
+import Technologies from "./Technologies";
+import {
+  IoLocationOutline,
+  IoCode,
+  IoGameControllerOutline,
+  IoCalendarOutline
+} from "react-icons/io5";
+
+const skills = [
+  { name: "React", level: 95 },
+  { name: "TypeScript", level: 92 },
+  { name: "Next.js", level: 88 },
+  { name: "TailwindCSS", level: 85 },
+  { name: "C#", level: 80 },
+  { name: "Node.js", level: 75 },
+];
 
 export default function IntroCard() {
     return (
-        <section className="py-15 px-6">
-            <div className="max-w-4xl mx-auto">
-                <Card
-                    elevation={0}
-                    sx={{
-                        backgroundColor: "var(--color-surface-2)",
-                        border: "1px solid var(--color-surface-3)",
-                        borderRadius: "20px",
-                    }}
-                >
-                    <CardContent className="flex flex-col items-center text-center gap-6 py-10">
+        <section className="flex py-15 justify-center px-8 relative overflow-hidden">
+            <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12">
+                <div className="space-y-6">
 
-                    <Avatar
-                        src="././public/profile.jpg"
-                        sx={{ width: 120, height: 120 }}
-                    />
+                    <p className="uppercase tracking-widest text-gray-500 text-sm">
+                        About Me
+                    </p>
 
-                    <Typography variant="h4" sx={{ fontWeight: 600 }}>
-                        Hi, I'm Kaden Buchanan
-                    </Typography>
+                    <h1 className="text-5xl font-bold leading-tight">
+                        Hi, I'm{" "}
+                        <span className="text-violet-400">Kaden Buchanan</span>
+                    </h1>
 
-                    <Typography variant="body1" sx={{ color: "var(--color-text-secondary)", maxWidth: 600 }}>
-                      Software developer from Utah focused on full-stack web
-                        applications and game development.
-                    </Typography>
+                    <div className="space-y-2 text-gray-400 text-lg">
+                        <div className="flex gap-3 ml-1 items-center"><IoLocationOutline className="text-violet-400 text-2xl" /> Based in Utah, USA</div>
+                        <div className="flex gap-3 ml-1 items-center"><IoCode className="text-violet-400 text-2xl" /> Full Stack Developer</div>
+                        <div className="flex gap-3 ml-1 items-center"><IoGameControllerOutline className="text-violet-400 text-2xl" /> Game Developer</div>
+                        <div className="flex gap-3 ml-1 items-center"><IoCalendarOutline className="text-violet-400 text-2xl" /> 7+ Years of Experience</div>
+                    </div>
 
-                  </CardContent>
-                </Card>
+                    <p className="text-gray-400 max-w-lg">
+                        Software Developer focused on full-stack web applications, and
+                        game development
+                    </p>
+
+                    <div className="flex gap-4 pt-4">
+                        <button className="bg-violet-500 hover:bg-violet-600 px-6 py-3 rounded-lg font-semibold transition">
+                        Get in Touch
+                        </button>
+
+                        <button className="border border-gray-700 hover:border-gray-500 px-6 py-3 rounded-lg transition">
+                        View Projects
+                        </button>
+                    </div>
+
+                </div>
+
+                <div className="space-y-10">
+                    <div className="flex items-end justify-center gap-6 mb-12">
+                        <Technologies />
+                    </div>
+                </div>
             </div>
         </section>
     );
