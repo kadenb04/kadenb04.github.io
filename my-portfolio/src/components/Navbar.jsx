@@ -1,6 +1,7 @@
 import { AppBar, Toolbar, IconButton, Button } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import DownloadIcon from '@mui/icons-material/Download';
 
 export default function Navbar() {
   return (
@@ -19,7 +20,15 @@ export default function Navbar() {
 
         <div className="flex gap-4">
           <Button href="#projects" color="inherit" className="hover:text-violet-400!">Projects</Button>
-          <Button href="#resume" color="inherit" className="hover:text-violet-400!">Resume</Button>
+          <Button 
+            href="/Resume.pdf" 
+            download="KadenBuchananResume.pdf" 
+            color="inherit" 
+            className="hover:text-violet-400!"
+            startIcon={<DownloadIcon fontSize="small" />}
+          >
+            Resume
+          </Button>
 
           <IconButton 
             component="a"
