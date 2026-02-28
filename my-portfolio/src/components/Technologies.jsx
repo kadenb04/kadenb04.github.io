@@ -15,7 +15,7 @@ const tech = [
   { name: "Lua", icon: <SiLua /> },
 ];
 
-export default function Technologies() {
+export default function Technologies({ onSkillClick }) {
   return (
     <section id="technologies">
       <div className="max-w-2xl mx-auto text-center">
@@ -27,6 +27,7 @@ export default function Technologies() {
           {tech.map((t, i) => (
             <div
               key={i}
+              onClick={() => onSkillClick(t.name)}
               className="flex flex-col items-center gap-4 p-6 border border-zinc-800 px-4 py-2 rounded-md text-sm transition hover:border-violet-400 hover:text-violet-400"
             >
               <div className="text-4xl">{t.icon}</div>

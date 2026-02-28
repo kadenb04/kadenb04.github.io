@@ -9,7 +9,7 @@ import {
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
 
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ project, flashSkill }) {
     return (
       <Card
         className="transition-all duration-300 rounded-xl"
@@ -57,6 +57,25 @@ export default function ProjectCard({ project }) {
                     label={tech}
                     size="small"
                     variant="outlined"
+                    sx={{
+                        transition: "all 0.4s ease",
+                        borderColor:
+                          flashSkill === tech
+                            ? "#8b5cf6"
+                            : "var(--color-surface-3)",
+                        color:
+                          flashSkill === tech
+                            ? "#8b5cf6"
+                            : "inherit",
+                        boxShadow:
+                          flashSkill === tech
+                            ? "0 0 8px rgba(139,92,246,0.6)"
+                            : "none",
+                        transform:
+                          flashSkill === tech
+                            ? "scale(1.08)"
+                            : "scale(1)",
+                      }}
                   />
                 ))}
               </Box>

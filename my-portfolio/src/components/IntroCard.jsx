@@ -14,7 +14,7 @@ const skills = [
   { name: "Node.js", level: 75 },
 ];
 
-export default function IntroCard() {
+export default function IntroCard({ onSkillClick }) {
     return (
         <section className="flex py-10 justify-center px-6 relative overflow-hidden">
             <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12">
@@ -43,7 +43,7 @@ export default function IntroCard() {
 
                 <div className="space-y-10">
                     <div className="flex items-end justify-center gap-6 mb-12">
-                        <Technologies />
+                        <Technologies onSkillClick={onSkillClick} />
                     </div>
                 </div>
             </div>
