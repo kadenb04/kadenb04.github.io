@@ -128,7 +128,7 @@ export default function ProjectCard({ project, flashSkill }) {
                     target="_blank"
                     className="text-white! hover:text-violet-500!"
                   >
-                    GitHub
+                    Repo
                   </Button>
                 )}
   
