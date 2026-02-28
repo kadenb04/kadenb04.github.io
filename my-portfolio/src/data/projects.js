@@ -9,7 +9,7 @@ const projects = [
       "DataStores",
     ],
     timeframe: "Jan 2024 – Present",
-    image: "/images/pockets.png",
+    thumbnail: "/images/boat_battles.png",
     github: "https://github.com/yourrepo",
     demo: "https://www.roblox.com/games/110566630715561/Pockets"
   },
@@ -23,7 +23,10 @@ const projects = [
       "React",
       "Node.js",
     ],
-    timeframe: "Oct 2025 – Dec 2025"
+    timeframe: "Oct 2025 – Dec 2025",
+    thumbnail: "/images/boat_battles.png",
+    github: "https://github.com/yourrepo",
+    demo: "https://www.roblox.com/games/110566630715561/Pockets"
   },
   {
     title: "Git Auto-commit File Watcher App",

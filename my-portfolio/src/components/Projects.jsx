@@ -4,9 +4,9 @@ import { Typography } from "@mui/material";
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-15 px-6">
+    <section id="projects" className="py-5 px-6">
         <div className="max-w-7xl mx-auto">
-            <Typography variant="h4" className="mb-16 pb-5 text-center">
+            <Typography variant="h4" className="mb-16 pb-8 text-center">
                 Projects
             </Typography>
 

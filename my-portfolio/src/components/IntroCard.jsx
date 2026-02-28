@@ -2,8 +2,7 @@ import Technologies from "./Technologies";
 import {
   IoLocationOutline,
   IoCode,
-  IoGameControllerOutline,
-  IoCalendarOutline
+  IoGameControllerOutline
 } from "react-icons/io5";
 
 const skills = [
@@ -17,9 +16,9 @@ const skills = [
 
 export default function IntroCard() {
     return (
-        <section className="flex py-15 justify-center px-8 relative overflow-hidden">
+        <section className="flex py-10 justify-center px-6 relative overflow-hidden">
             <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12">
-                <div className="space-y-6">
+                <div className="space-y-2">
 
                     <p className="uppercase tracking-widest text-gray-500 text-sm">
                         About Me
@@ -34,24 +33,12 @@ export default function IntroCard() {
                         <div className="flex gap-3 ml-1 items-center"><IoLocationOutline className="text-violet-400 text-2xl" /> Based in Utah, USA</div>
                         <div className="flex gap-3 ml-1 items-center"><IoCode className="text-violet-400 text-2xl" /> Full Stack Developer</div>
                         <div className="flex gap-3 ml-1 items-center"><IoGameControllerOutline className="text-violet-400 text-2xl" /> Game Developer</div>
-                        <div className="flex gap-3 ml-1 items-center"><IoCalendarOutline className="text-violet-400 text-2xl" /> 7+ Years of Experience</div>
                     </div>
 
                     <p className="text-gray-400 max-w-lg">
                         Software Developer focused on full-stack web applications, and
                         game development
                     </p>
-
-                    <div className="flex gap-4 pt-4">
-                        <button className="bg-violet-500 hover:bg-violet-600 px-6 py-3 rounded-lg font-semibold transition">
-                        Get in Touch
-                        </button>
-
-                        <button className="border border-gray-700 hover:border-gray-500 px-6 py-3 rounded-lg transition">
-                        View Projects
-                        </button>
-                    </div>
-
                 </div>
 
                 <div className="space-y-10">

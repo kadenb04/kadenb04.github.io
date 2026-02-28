@@ -17,7 +17,7 @@ const tech = [
 
 export default function Technologies() {
   return (
-    <section id="technologies" className="py-10 px-6">
+    <section id="technologies">
       <div className="max-w-2xl mx-auto text-center">
         <Typography variant="h4" className="mb-16 pb-5">
           Key Skills
