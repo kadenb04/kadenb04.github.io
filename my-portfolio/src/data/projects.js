@@ -1,8 +1,8 @@
 const projects = [
   {
-    title: "Git Auto-commit File Watcher App",
+    title: "Only Aces",
     description:
-      "Desktop application built with Avalonia and .NET for tracking file system changes, managing tracking sessions, and persisting activity logs with SQLite.",
+      "Cross-platform desktop application built with .NET for tracking file system changes, and committing those changes for a consistent log of work.",
     stack: [
       ".NET",
       "SQLite",
@@ -13,9 +13,9 @@ const projects = [
     thumbnail: "/images/only_aces.png",
   },
   {
-    title: "MERN Banking Application",
+    title: "Banking App",
     description:
-      "A full-stack financial platform supporting account management, transaction history, authentication, and real-time dashboard updates with secure REST APIs.",
+      "A full-stack financial platform supporting deposits, withdrawals, and transfers with transaction history.",
     stack: [
       "MongoDB",
       "Express",
@@ -24,12 +24,12 @@ const projects = [
     ],
     timeframe: "Oct 2025 – Dec 2025",
     thumbnail: "/images/banking_app.png",
-    github: "https://github.com/KadenBu/AnonymousTrio-BankingApp"
+    //github: "https://github.com/KadenBu/AnonymousTrio-BankingApp"
   },
   {
     title: "Speed Game",
     description:
-      "A full-stack financial platform supporting account management, transaction history, authentication, and real-time dashboard updates with secure REST APIs.",
+      "A full-stack speed card game supporting gameplay with another user through WebSockets.",
     stack: [
       "MongoDB",
       "Express",
@@ -39,12 +39,12 @@ const projects = [
     ],
     timeframe: "Oct 2025 – Dec 2025",
     thumbnail: "/images/speed.png",
-    github: "https://github.com/KadenBu/AnonymousTrio-BankingApp"
+    //github: "https://github.com/KadenBu/AnonymousTrio-BankingApp"
   },
   {
     title: "Battle Boats",
     description:
-      "A multiplayer billiards game where the player is a ball trying to knock other players into the pockets.",
+      "A multiplayer sandbox boat building game where you battle with the boats you build.",
     stack: [
       "Roblox",
       "Lua",
@@ -57,7 +57,7 @@ const projects = [
   {
     title: "Chambers",
     description:
-      "A multiplayer billiards game where the player is a ball trying to knock other players into the pockets.",
+      "A multiplayer horror game where your trying to escape the Chambers with each room having a new surprise.",
     stack: [
       "Roblox",
       "Lua",
@@ -70,7 +70,7 @@ const projects = [
   {
     title: "Word Bridge",
     description:
-      "A multiplayer billiards game where the player is a ball trying to knock other players into the pockets.",
+      "A multiplayer \"racing\" game where you are trying to answer with the longest word to each question.",
     stack: [
       "Roblox",
       "Lua",
