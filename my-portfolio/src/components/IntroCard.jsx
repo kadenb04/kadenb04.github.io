@@ -5,15 +5,6 @@ import {
   IoGameControllerOutline
 } from "react-icons/io5";
 
-const skills = [
-  { name: "React", level: 95 },
-  { name: "TypeScript", level: 92 },
-  { name: "Next.js", level: 88 },
-  { name: "TailwindCSS", level: 85 },
-  { name: "C#", level: 80 },
-  { name: "Node.js", level: 75 },
-];
-
 export default function IntroCard({ onSkillClick }) {
     return (
         <section className="flex py-10 justify-center px-6 relative overflow-hidden">

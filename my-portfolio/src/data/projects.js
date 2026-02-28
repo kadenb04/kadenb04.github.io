@@ -5,7 +5,7 @@ const projects = [
       "A multiplayer billiards game where the player is a ball trying to knock other players into the pockets.",
     stack: [
       "Roblox",
-      "Luau",
+      "Lua",
       "DataStores",
     ],
     timeframe: "Jan 2024 – Present",

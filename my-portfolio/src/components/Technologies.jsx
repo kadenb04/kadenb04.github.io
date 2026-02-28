@@ -4,13 +4,19 @@ import {
   SiMongodb,
   SiDotnet,
   SiTailwindcss,
-  SiLua
+  SiLua,
+  SiJavascript,
+  SiNodedotjs,
+  SiSqlite
 } from "react-icons/si";
 
 const tech = [
+  { name: "JavaScript", icon: <SiJavascript /> },
   { name: "React", icon: <SiReact /> },
+  { name: "Node.js", icon: <SiNodedotjs /> },
   { name: "MongoDB", icon: <SiMongodb /> },
   { name: ".NET", icon: <SiDotnet /> },
+  { name: "SQLite", icon: <SiSqlite /> },
   { name: "Tailwind", icon: <SiTailwindcss /> },
   { name: "Lua", icon: <SiLua /> },
 ];
@@ -23,12 +29,12 @@ export default function Technologies({ onSkillClick }) {
           Key Skills
         </Typography>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
           {tech.map((t, i) => (
             <div
               key={i}
               onClick={() => onSkillClick(t.name)}
-              className="flex flex-col items-center gap-4 p-6 border border-zinc-800 px-4 py-2 rounded-md text-sm transition hover:border-violet-400 hover:text-violet-400"
+              className="flex flex-col items-center gap-2 p-6 border border-zinc-800 px-4 py-2 rounded-md text-sm transition hover:border-violet-400 hover:text-violet-400"
             >
               <div className="text-4xl">{t.icon}</div>
               <p className="text-sm">{t.name}</p>
