@@ -20,6 +20,8 @@ export default function Navbar() {
 
             <div className="flex gap-4">
                <Button href="#projects" color="inherit" className="hover:text-violet-400!">Projects</Button>
+               <Button href="#education" color="inherit" className="hover:text-violet-400!">Education</Button>
+
                <Button 
                   href="/Resume.pdf" 
                   download="KadenBuchananResume.pdf" 

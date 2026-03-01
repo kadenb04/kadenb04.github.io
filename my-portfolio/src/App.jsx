@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from './components/Navbar'
 import IntroCard from "./components/IntroCard"
 import Projects from "./components/Projects"
+import EducationTimeline from "./components/EducationTimeline";
 
 function App() {
    const [flashSkill, setFlashSkill] = useState(null);
@@ -27,6 +28,7 @@ function App() {
          <Navbar />
          <IntroCard onSkillClick={triggerFlash} />
          <Projects flashSkill={flashSkill} />
+         <EducationTimeline />
       </>
    )
 }
